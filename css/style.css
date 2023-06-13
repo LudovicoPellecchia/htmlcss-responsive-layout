@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%; 
+    max-width: 990px;
+}
+
+:root{
+    --hero-color:#0084FD;
+    --main-color:#9792E4;
+}
+
+.nav-bar{
+    height: 100px;
+    width: 100%;
+    background-color:#0084FD ;
+}
+
+.row{
+    display: flex;
+}
