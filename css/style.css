@@ -8,9 +8,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+section{
+    padding-bottom:3rem;
+}
+
 .container{
     width: 100%; 
     max-width: 990px;
+    padding: 0 30px;
 }
 
 :root{
@@ -45,8 +50,8 @@ nav{
 }
 
 .col{
-    padding: 0 30px;
-    flex-basis: 100%;
+/*     padding: 0 30px;
+ */    flex-basis: 100%;
 }
 
 .col-card{
@@ -57,17 +62,20 @@ nav{
     background-color: #B5DDFF;
 }
 
-.col-card h2{
+.col-card h3{
+    font-size: 1.3rem;
     color: var(--hero-color);
 }
 
-.col-card p{
+.p-style{
+    line-height: 1.6rem;
+}
+.col-card .p-style{
     color: rgb(82, 82, 82);
-    line-height: 1.5rem;
     font-weight: 600;
 }
 
-.col-card h2, .col-card p, .col-card .btn{
+.col-card h3, .col-card p, .col-card .btn{
     padding-bottom: var(--paragraph-spacing-mb);
 }
 
@@ -94,10 +102,30 @@ nav{
     text-align: center;
 }
 
-.col-card h2 i{
+.col-card h3 i{
     display: block;
     font-size: 5rem;
 }
+
+
+/* PRIMA SEZIONE */
+
+.strategic-plan-sct{
+    color: white;
+    background-color: var(--main-color);
+
+}
+
+.strategic-plan-sct img{
+    width: 100%;
+}
+
+.strategic-plan-sct h2{
+    font-size: 1.5rem;
+    padding: 2.4rem 0;
+}
+
+
 
 
 /* @media screen and (min-width: 578px) {
