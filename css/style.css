@@ -235,7 +235,7 @@ nav{
 }
 
 .benefit-card{
-    border-radius: 30px ;
+    border-radius: 25px ;
     background-color: white;
     color: black;
     padding: var(--cards-inside-padding);
@@ -393,8 +393,11 @@ footer{
         flex-basis: 60%;
     }
 
+    .row-benefit{
+        justify-content: space-between;
+    }
     .benefit-card{
-        flex-basis:calc(50% - 20px);
+        flex-basis:calc(50% - 1rem);
     }
 
     .about-us-sct .row{
@@ -434,9 +437,37 @@ footer{
         flex-basis: 50%;
         align-self: flex-end;
     }
+
+
+    .strategic-plan-sct .row-strategic{
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    .strategic-plan-sct .left-col-strategic{
+        flex-basis:0;
+        flex-grow: 1.4;
+
+    }
+
+
+    .strategic-plan-sct .right-col-strategic{
+        align-self: flex-end;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .strategic-plan-card img{
+        max-width: 250px;
+    }
+    
+
+    .benefit-card{
+        flex-grow: 1;
+        flex-basis: calc((100% / 3) - 4rem);
+    }
+    
 }
-
-
 
 
 
