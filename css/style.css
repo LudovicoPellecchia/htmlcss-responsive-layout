@@ -18,7 +18,6 @@ section{
 
 .container{
     width: 100%; 
-    max-width: 990px;
     padding: 0 30px;
 }
 
@@ -83,9 +82,9 @@ nav{
     padding-bottom: var(--paragraph-spacing-mb);
 }
 
-.btn-cnt{
+/* .btn-cnt{
     text-align: center;
-}
+} */
 
 .col-card .btn{
     border-radius: 30px;
@@ -97,6 +96,7 @@ nav{
 }
 
 .col-card img{
+    max-width: 300px;
     display: block;
     width: 100%;
 }
@@ -120,6 +120,8 @@ nav{
 }
 
 .strategic-plan-sct img{
+    margin: auto;
+    max-width: 600px;
     width: 100%;
     display: block;
     padding-top: var(--paragraph-spacing-mb);
@@ -193,7 +195,6 @@ nav{
 .testimonial-card{
     padding: var(--cards-inside-padding);
     color: white;
-    text-align: center;
     background-color: var(--main-color);
     border-radius: 40px;  
 }
@@ -222,6 +223,8 @@ nav{
     background-color: var(--main-color);
 }
 .benefit-sct h3{
+    padding-bottom: 1.5rem;
+    text-align: center;
     font-size: 1.8rem;
 
 }
@@ -326,11 +329,12 @@ nav{
 
 .get-started-sct h2{
     color:#FDC15F ;
-    font-size: 2.2rem;
+    font-size: 3.3rem;
     padding-bottom: 2rem;
 }
 .get-started-sct .copyright{
     display: flex;
+    justify-content: center;
 }
 
 .get-started-sct p{
@@ -355,8 +359,74 @@ footer{
     color: white;
     text-align: center;
     background-color: #333333;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
+
+
+@media screen and (min-width:768px) {
+    .row{
+        flex-direction: row;
+    }
+
+    .col-2-3{
+        flex-basis: calc((100% / 3) * 2 - 2rem);
+    }
+
+    .col-1-3{
+        flex-basis: calc((100% / 3) - 2rem );
+    }
+    
+    .testimonial-card{
+        text-align: left;
+    }
+    .testimonial-card{
+        display: flex;
+    }
+
+    .testimonial-card .test-card-img{
+        flex-basis: 40%;
+    }
+
+    .testimonial-card .test-card-text{
+        flex-basis: 60%;
+    }
+
+    .benefit-card{
+        flex-basis:calc(50% - 20px);
+    }
+
+    .about-us-sct .row{
+        gap: 50px;
+    }
+
+    .about-us-sct .col-text{
+        flex-basis:0;
+        flex-grow: 2;
+
+    }
+    .about-us-sct .col-img{
+        flex-basis: 0;
+        flex-grow:1;
+    }
+
+
+    .get-started-sct .container{
+        margin: auto;
+        max-width: 500px;        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* @media screen and (min-width: 578px) {
     .row{
         flex-direction: row;
