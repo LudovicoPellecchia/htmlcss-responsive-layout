@@ -247,9 +247,13 @@ nav{
     color: white;
     background-color: var(--main-color);
 }
+
+.benefit-sct .container > h3{
+    text-align: center;
+}
+
 .benefit-sct h3{
     padding-bottom: 1.5rem;
-    text-align: center;
     font-size: 1.8rem;
 
 }
@@ -468,7 +472,7 @@ footer a{
     }
 
     .container-medium{
-        padding: 0 80px;
+        padding: 0 70px;
     }
 
     .container-xs{
