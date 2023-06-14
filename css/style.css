@@ -10,6 +10,7 @@ body{
 
 section{
     padding-bottom:3rem;
+    padding-top: 3rem;
 }
 
 .container{
@@ -21,13 +22,13 @@ section{
 :root{
     --hero-color:#0084FD;
     --main-color:#9792E4;
-    --paragraph-spacing-mb:20px
+    --paragraph-spacing-mb:20px;
+    --cards-inside-padding:20px 20px 0 20px;
 }
 
 nav{
     width: 100%;
     background-color:#0084FD ;
-    margin-bottom: 30px;
 }
 
 .nav-bar{
@@ -55,7 +56,7 @@ nav{
 }
 
 .col-card{
-    padding: 20px 20px 0 20px;
+    padding: var(--cards-inside-padding);
     height: 100%;
     width: 100%;
     border-radius:25px;
@@ -75,16 +76,15 @@ nav{
     font-weight: 600;
 }
 
-.col-card h3, .col-card p, .col-card .btn{
+.col-card h3, .col-card p, .col-card .btn-cnt{
     padding-bottom: var(--paragraph-spacing-mb);
 }
 
-.col-card .btn{
+.btn-cnt{
     text-align: center;
 }
 
-.col-card .btn div{
-    text-align: center;
+.col-card .btn{
     border-radius: 30px;
     padding: 10px 50px;
     font-size: 1.2rem;
@@ -118,6 +118,8 @@ nav{
 
 .strategic-plan-sct img{
     width: 100%;
+    display: block;
+    padding-top: var(--paragraph-spacing-mb);
 }
 
 .strategic-plan-sct h2{
@@ -125,6 +127,46 @@ nav{
     padding: 2.4rem 0;
 }
 
+.strategic-plan-sct p{
+    padding-bottom: var(--paragraph-spacing-mb);
+}
+
+.strategic-plan-card{
+    padding: var(--cards-inside-padding);
+    color: black;
+    text-align: center;
+    background-color: white;
+    border-radius: 40px;  
+}
+
+
+
+.strategic-plan-card img{
+    padding-top: var(--paragraph-spacing-mb);
+    display: block;
+    width: 100%;
+}
+
+.strategic-plan-card h3,.strategic-plan-card p{
+    padding-top: var(--paragraph-spacing-mb);
+}
+
+.arrow-btn{
+    padding-bottom: var(--paragraph-spacing-mb);
+    display: flex;
+    justify-content: center;
+}
+
+.strategic-plan-card i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: var(--main-color);
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
 
 
 
