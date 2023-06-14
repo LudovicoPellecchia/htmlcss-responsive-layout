@@ -142,8 +142,6 @@ nav{
     border-radius: 40px;  
 }
 
-
-
 .strategic-plan-card img{
     padding-top: var(--paragraph-spacing-mb);
     display: block;
@@ -200,14 +198,17 @@ nav{
     border-radius: 40px;  
 }
 
-.testimonial-card img{
-    margin: auto;
+.square-pic{
     max-width: 250px;
     object-fit: cover;
     display: block;
     aspect-ratio: 1/1;
     border-radius: 50%;
     width: 100%;
+}
+
+.testimonial-card .square-pic{
+    margin: auto;
 }
 
 .testimonial-card h3{
@@ -261,8 +262,49 @@ nav{
     
 }
 
+.about-us-sct .col-text h3{
+    color: var(--main-color);
+    font-size: 2rem;
+    padding: 2rem 0;
+}
 
+.about-us-sct p{
+    padding-bottom: 2rem;
+}
 
+.about-us-sct .col-img{
+    position: relative;
+}
+
+.about-us-sct .quote-icon i{
+    color: var(--main-color);
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.about-us-sct .col-img h3{
+    line-height:2rem;
+    font-size: 1.8rem;
+    color: var(--main-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-us-sct .btn{
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    background-color: var(--main-color);
+}
+
+.about-us-sct i{
+    padding: 4px;
+    color: rgb(141, 141, 141);
+    background-color: white;
+}
 /* @media screen and (min-width: 578px) {
     .row{
         flex-direction: row;
