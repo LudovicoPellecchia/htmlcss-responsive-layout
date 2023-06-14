@@ -463,6 +463,18 @@ footer a{
         width: 980px;
     }
 
+    .container-small{
+        padding: 0 120px;
+    }
+
+    .container-medium{
+        padding: 0 80px;
+    }
+
+    .container-xs{
+        padding: 0 200px;
+    }
+
     .nav-menu-icon{
         display: none;
     }
