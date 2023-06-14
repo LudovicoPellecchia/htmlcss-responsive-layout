@@ -17,6 +17,7 @@ section{
 }
 
 .container{
+    margin: auto;
     width: 100%; 
     padding: 0 30px;
 }
@@ -412,10 +413,29 @@ footer{
 
 
     .get-started-sct .container{
-        margin: auto;
         max-width: 500px;        
     }
 }
+
+
+@media screen and (min-width:992px) {
+    .container{
+        width: 980px;
+    }
+
+    .hero-section .col-2-3 .col-card{
+        display: flex;
+    }
+
+    .hero-section .col-2-3 .col-card-text{
+        flex-basis: 50%;
+    }
+    .hero-section .col-2-3 .col-card-img{
+        flex-basis: 50%;
+        align-self: flex-end;
+    }
+}
+
 
 
 
